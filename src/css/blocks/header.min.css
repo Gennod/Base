@@ -1,0 +1,1 @@
+.header{height:100vh;background:url(../img/main-bg.jpg) center center/cover no-repeat;padding:50px}.header__menu{display:flex;justify-content:space-between;align-items:center}.header__menu img{width:110px;height:42px}.header__nav{width:457px}.header__nav ul{display:flex;justify-content:space-between}.header__nav ul a.active{color:#fff;font-weight:500;border-bottom:2px solid #fff}

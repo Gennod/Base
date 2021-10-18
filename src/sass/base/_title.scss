@@ -1,0 +1,28 @@
+.title {
+  font-weight: 500;
+  font-size: 60px;
+  color: #ffffff;
+  span {
+    color: $main-color;
+    position: relative;
+    font-weight: 700;
+  }
+  span:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: $main-color;
+    left: 0;
+    bottom: 15%;
+  }
+  span:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: #fff;
+    right: 0;
+    bottom: 15%;
+  }
+}
