@@ -1,0 +1,30 @@
+.features {
+  padding-top: 130px;
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: auto;
+      height: 47px;
+      object-fit: contain;
+    }
+    margin-bottom: 140px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 140px;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: 574px 496px;
+    column-gap: 155px;
+    &-img {
+      img {
+        height: 650px;
+        object-fit: cover;
+      }
+    }
+  }
+
+}

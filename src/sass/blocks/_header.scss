@@ -1,6 +1,7 @@
+
 .header {
   height: 100vh;
-  background: url("../img/main-bg.jpg") center center/cover no-repeat;
+  background: url("../img/main-bg.jpg ") center center/cover no-repeat;
   padding: 50px;
   &__menu {
     display: flex;
@@ -26,10 +27,6 @@
   &__content {
     margin-top: 126px;
   }
-  &__subtitle {
-    color: $main-color;
-    text-transform: uppercase;
-  }
   &__title {
     line-height: 140%;
     margin-top: 0;
@@ -39,9 +36,10 @@
     line-height: 160%;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 40px;
-    span {
+    span.descr-underline {
       font-weight: 600;
       text-decoration: underline;
+      color: rgba(255, 255, 255, 1);
     }
   }
   &__btns {
@@ -55,7 +53,7 @@
   &__bottom {
     line-height: 140%;
     color: rgba(255, 255, 255, 0.5);
-    span {
+    span.opacity7 {
       color: rgba(255, 255, 255, 0.7);
     }
   }
