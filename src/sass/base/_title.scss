@@ -1,15 +1,14 @@
 .title {
   font-weight: 500;
   font-size: 60px;
-  color: #ffffff;
+  color: $color-white;
   span.blue {
     color: $main-color;
     position: relative;
     font-weight: 700;
   }
   span.underline::before {
-    content: '';
-    position: absolute;
+    @include pseudo;
     width: 40%;
     height: 3px;
     background-color: $main-color;
@@ -17,11 +16,10 @@
     bottom: 13px;
   }
   span.underline::after {
-    content: '';
-    position: absolute;
+    @include pseudo;
     width: 60%;
     height: 3px;
-    background-color: #fff;
+    background-color: $color-white;
     right: 0;
     bottom: 13px;
   }

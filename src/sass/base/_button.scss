@@ -4,12 +4,12 @@
   font-weight: 500;
   font-size: 18px;
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid $color-white-op1;
   border-radius: 3px;
-  color: #fff;
+  color: $color-white;
   &.active {
     color: $main-color;
-    background: #ffffff;
+    background: $color-white;
     border: none;
   }
 }

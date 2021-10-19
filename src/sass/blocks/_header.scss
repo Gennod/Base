@@ -1,12 +1,9 @@
-
 .header {
   height: 100vh;
   background: url("../img/main-bg.jpg ") center center/cover no-repeat;
   padding: 50px;
   &__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include dflex-jcsb-aic;
     img {
       width: 110px;
       height: 42px;
@@ -15,12 +12,11 @@
   &__nav {
     width: 457px;
     ul {
-      display: flex;
-      justify-content: space-between;
+      @include dflex-jcsb;
       a.active {
-        color: #fff;
+        color: $color-white;
         font-weight: 500;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid $color-white;
       }
     }
   }
@@ -34,27 +30,29 @@
   }
   &__descr {
     line-height: 160%;
-    color: rgba(255, 255, 255, 0.7);
+    color: $color-white-op7;
     margin-bottom: 40px;
     span.descr-underline {
       font-weight: 600;
       text-decoration: underline;
-      color: rgba(255, 255, 255, 1);
+      color: $color-white;
     }
   }
   &__btns {
     width: 440px;
     display: flex;
     margin-bottom: 54px;
-    a:nth-child(1) {
+  }
+  &__btn {
+    &_first {
       margin-right: 30px;
     }
   }
   &__bottom {
     line-height: 140%;
-    color: rgba(255, 255, 255, 0.5);
+    color: $color-white-op5;
     span.opacity7 {
-      color: rgba(255, 255, 255, 0.7);
+      color: $color-white-op7;
     }
   }
 }

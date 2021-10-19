@@ -1,0 +1,27 @@
+@mixin dflex-jcsb-aic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin dflex-jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin push--auto {
+  margin: {
+   left: auto;
+   right: auto;
+  }
+}
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+@mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: "Poppins", sans-serif;
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
