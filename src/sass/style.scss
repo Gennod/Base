@@ -33,5 +33,9 @@ li {
   @include push--auto;
 }
 
+.fw600 {
+  font-weight: 600;
+}
+
 @import "blocks/header";
 @import "blocks/features";

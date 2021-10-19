@@ -27,5 +27,11 @@
     color: $main-color;
     text-transform: uppercase;
     font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+  &_fz39 {
+    font-size: 39px;
+    line-height: 135%;
+    color: $color-black;
   }
 }
