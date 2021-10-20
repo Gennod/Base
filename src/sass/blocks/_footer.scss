@@ -1,0 +1,45 @@
+.footer {
+  height: 376px;
+  background-color: $color-footer;
+  padding: 126px 0;
+  color: $color-white;
+  &__wrapper {
+    @include dflex-jcsb;
+  }
+  &__text {
+    color: $color-white-op7;
+    margin-top: 30px;
+  }
+  &__list {
+    @include dflex-jcsb;
+  }
+  &__item {
+    margin-left: 80px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__link {
+    margin-bottom: 19px;
+  }
+  &__input {
+    padding: 9px 15px;
+    text-align: left;
+    border: 1px solid $color-white-op5;
+    border-radius: 19.5px;
+    background: none;
+    color: $color-white;
+    margin-bottom: 20px;
+  }
+  &__socials {
+    @include dflex-jcsb;
+    width: 111px;
+  }
+  &__img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: none;
+    @include dflex-center;
+  }
+}
