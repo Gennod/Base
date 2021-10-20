@@ -11,6 +11,7 @@
 
 body {
   @include font-source-sans(16px, $text-color, 400);
+  background-color: $color-mainbg;
 }
 
 a {
@@ -43,3 +44,4 @@ h2 {
 
 @import "blocks/header";
 @import "blocks/features";
+@import "blocks/skills";
