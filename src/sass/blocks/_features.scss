@@ -1,5 +1,6 @@
 .features {
   padding-top: 130px;
+  background-color: $color-mainbg;
   &__icons {
     display: flex;
     justify-content: space-between;
@@ -22,6 +23,17 @@
     &-img {
       position: relative;
       height: 650px;
+    }
+    &-img-2 {
+      position: relative;
+      img {
+        height: 533px;
+        width: 750px;
+        object-fit: cover;
+        position: absolute;
+        right: -10%;
+        bottom: 0;
+      }
     }
   }
   &__template-1 {
@@ -73,5 +85,54 @@
   &__about {
     padding-left: 47px;
     line-height: 160%;
+  }
+  &__facts {
+    background-color: $color-white;
+    border-radius: 10px;
+    padding: 18px 24px;
+    position: relative;
+    max-width: 472px;
+    margin-bottom: 12px;
+  }
+  &__block {
+    margin-top: 19px;
+    padding-left: 11px;
+  }
+  &__arrowup {
+    position: absolute;
+    right: 24px;
+    top: 29px;
+  }
+  &__review {
+    background: $color-white;
+    border: 1px solid $text-color-op1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 12px 24px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  &__reviews {
+    max-width: 472px;
+  }
+  &__arrowdown {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 24px;
+  }
+  &__btns {
+    margin-top: 45px;
+  }
+  &__span_blue {
+    color: $main-color;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__btn {
+    display: inline-block;
+    &_first {
+      margin-right: 25px;
+    }
   }
 }
