@@ -3,6 +3,7 @@
   background-color: $color-footer;
   padding: 126px 0;
   color: $color-white;
+  position: relative;
   &__wrapper {
     @include dflex-jcsb;
   }
@@ -41,5 +42,55 @@
     border-radius: 50%;
     background: none;
     @include dflex-center;
+  }
+  &__dummy {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1260px;
+    height: 206px;
+    background: url("../img/dummy-bg.png") center center/cover no-repeat;
+    border-radius: 5px;
+    padding: 54px;
+    color: $color-white;
+    @include dflex-jcsb-aic;
+    &-title {
+      font-size: 39px;
+      margin-bottom: 25px;
+    }
+    &-text {
+      color: $color-white-op9;
+    }
+    &-contact {
+      position: relative;
+      cursor: pointer;
+    }
+    &-img {
+      position: absolute;
+      right: 42px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+    &-contact::after {
+      @include pseudo();
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 74px;
+      height: 42px;
+      background: $color-white;
+      border-radius: 50px;
+    }
+    &-input {
+      color: $color-white;
+      width: 460px;
+      padding: 24px 40px;
+      border-radius: 50px;
+      background: none;
+      border: 1px solid $color-white-op7;
+    }
+
   }
 }
