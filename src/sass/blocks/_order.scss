@@ -1,0 +1,117 @@
+.order {
+  padding-top: 120px;
+  padding-bottom: 380px;
+  text-align: center;
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__text {
+    margin-bottom: 60px;
+    color: $text-color-op7;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 362px);
+    column-gap: 2px;
+    justify-content: center;
+  }
+  &__item {
+    border: 1px solid $main-color-op1;
+    border-radius: 10px;
+    background-color: $color-white;
+    padding: 29px 70px 29px 60px;
+  }
+  &__item.selected {
+    transform: scale(1.12);
+    background: linear-gradient(180deg, $main-color 0%, #002648 0.01%, #002547 100%);
+    box-shadow: 0px 20px 100px $color-black-op05;
+    border-radius: 10px;
+    color: $color-white;
+    .order__descr {
+      color: $color-white;
+    }
+    .order__name {
+      color: $color-white;
+    }
+    .order__price {
+      color: $color-white;
+    }
+    .order__select {
+      background: $color-white-op1;
+      border: 1px solid $color-white-op3;
+      color: $color-white;
+      &-inner {
+        background: $main-color;
+        border: 1px solid $color-white-op5;
+      }
+    }
+    .order__list {
+      &-img {
+        background-color: $color-white;
+        border: none;
+      }
+    }
+    .order__btn {
+      background-color: $color-white;
+      color: $main-color;
+    }
+  }
+  &__name {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__descr {
+    color: $text-color-op7;
+    margin-bottom: 19px;
+  }
+  &__price {
+    margin-bottom: 20px;
+  }
+  &__select {
+    background: $color-grey;
+    border: 0.5px solid $text-color-op05;
+    border-radius: 18px;
+    position: relative;
+    text-align: right;
+    padding: 8px 30px;
+    margin-bottom: 27px;
+    font-weight: 400;
+    font-size: 13px;
+    &-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: $color-white;
+      box-shadow: 4px 2px 38px $color-black-op02;
+      border-radius: 18px;
+      text-align: center;
+      padding: 7px 29px;
+      cursor: pointer;
+    }
+  }
+  &__list {
+    &-item {
+      padding-left: 17px;
+      position: relative;
+      margin-bottom: 15px;
+    }
+    &-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid $main-color-op1;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      @include dflex-center;
+    }
+  }
+  &__btn {
+    margin-top: 27px;
+    @include push--auto;
+    border-radius: 4px;
+  }
+}

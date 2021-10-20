@@ -1,6 +1,5 @@
 .skills {
   padding-top: 156px;
-  padding-bottom: 120px;
   text-align: center;
   &__subtitle {
     margin-bottom: 10px;
@@ -34,9 +33,9 @@
     background: url("../icons/skills-icon-bg.svg") center center/cover no-repeat;
     width: 60px;
     height: 60px;
-    margin: 0 auto;
     position: relative;
     margin-bottom: 26px;
+    @include push--auto;
     img {
       position: absolute;
       top: 50%;
