@@ -24,7 +24,7 @@
     position: relative;
     padding-top: 38px;
     display: grid;
-    grid-template-columns: repeat(3, 226px);
+    grid-template-columns: repeat(3, minmax(auto, 226px));
     justify-content: center;
     column-gap: 166px;
     row-gap: 60px;

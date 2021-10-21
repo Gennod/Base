@@ -11,7 +11,7 @@
   }
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 362px);
+    grid-template-columns: repeat(3, minmax(auto, 362px));
     column-gap: 2px;
     justify-content: center;
   }
