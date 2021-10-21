@@ -99,6 +99,7 @@
       margin-bottom: 15px;
     }
     &-img {
+      @include dflex-center;
       position: absolute;
       left: 0;
       top: 0;
@@ -106,12 +107,11 @@
       border-radius: 50%;
       width: 22px;
       height: 22px;
-      @include dflex-center;
     }
   }
   &__btn {
-    margin-top: 27px;
     @include push--auto;
+    margin-top: 27px;
     border-radius: 4px;
   }
 }

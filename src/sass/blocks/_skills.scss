@@ -30,12 +30,12 @@
     row-gap: 60px;
   }
   &__icon {
+    @include push--auto;
     background: url("../icons/skills-icon-bg.svg") center center/cover no-repeat;
     width: 60px;
     height: 60px;
     position: relative;
     margin-bottom: 26px;
-    @include push--auto;
     img {
       position: absolute;
       top: 50%;
