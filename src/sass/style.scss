@@ -1,53 +1,8 @@
 @import "base/variables";
 @import "base/mixins";
-@import "base/button";
-@import "base/title";
 @import "base/fonts";
 
-<<<<<<< HEAD
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-body {
-  @include font-source-sans(16px, $text-color, 400);
-  background-color: $color-mainbg;
-}
-
-a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 16px;
-  color: $color-white-op6;
-  cursor: pointer;
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h2 {
-  margin: 0;
-}
-
-.container {
-  max-width: 1140px;
-  @include push--auto;
-}
-
-.fw600 {
-  font-weight: 600;
-}
-=======
 @import "base/global";
->>>>>>> 2f868547b6c05d25eb2dd855b72dc1bf464167bd
 
 @import "blocks/header";
 @import "blocks/features";

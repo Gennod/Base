@@ -2,6 +2,7 @@
 ::before,
 ::after {
     box-sizing: border-box;
+    font-family: "Poppins";
 }
 
 body {
@@ -34,8 +35,3 @@ h2 {
     max-width: 1140px;
 }
 
-.text {
-    &-semibold {
-        font-weight: 600;
-    }
-}

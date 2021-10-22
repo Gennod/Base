@@ -1,7 +1,46 @@
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../img/main-bg.jpg ") center center/cover no-repeat;
   padding: 50px;
+  &__btn {
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    background: none;
+    border: 1px solid $color-white-op1;
+    border-radius: 3px;
+    color: $color-white;
+    text-align: center;
+    &_active {
+      color: $main-color;
+      background: $color-white;
+      border: none;
+    }
+    &_first {
+      margin-right: 30px;
+    }
+  }
+  &__title {
+    line-height: 70px;
+    margin: 0 0 25px 0;
+    &_title {
+      font-weight: 500;
+      font-size: 60px;
+      color: $color-white;
+    }
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    color: $main-color;
+    &_fz {
+      &_small {
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        font-size: 16px;
+      }
+    }
+  }
   &__menu {
     @include dflex-jcsb-aic;
     img {
@@ -23,36 +62,49 @@
   &__content {
     margin-top: 126px;
   }
-  &__title {
-    line-height: 70px;
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
   &__descr {
     line-height: 25px;
     color: $color-white-op7;
     margin-bottom: 40px;
-    &_underline {
-      font-weight: 600;
-      text-decoration: underline;
-      color: $color-white;
-    }
   }
   &__btns {
     width: 440px;
     display: flex;
     margin-bottom: 54px;
   }
-  &__btn {
-    &_first {
-      margin-right: 30px;
-    }
-  }
   &__bottom {
     line-height: 20px;
     color: $color-white-op5;
   }
   &_opacity {
+    color: $color-white-op7;
+  }
+  &_blue {
+    color: $main-color;
+    position: relative;
+    font-weight: 700;
+  }
+  &_underline {
+    &::before {
+      @include pseudo;
+      width: 40%;
+      height: 3px;
+      background-color: $main-color;
+      left: 0;
+      bottom: 13px;
+    }
+    &::after {
+      @include pseudo;
+      width: 60%;
+      height: 3px;
+      background-color: $color-white;
+      right: 0;
+      bottom: 13px;
+    }
+  }
+  &_descr-underline {
+    font-weight: 600;
+    text-decoration: underline;
     color: $color-white-op7;
   }
 }

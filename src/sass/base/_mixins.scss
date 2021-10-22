@@ -14,19 +14,58 @@
 }
 @mixin push--auto {
   margin: {
-   left: auto;
-   right: auto;
+    left: auto;
+    right: auto;
   }
 }
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
   content: $content;
   display: $display;
   position: $pos;
 }
-@mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false) {
+@mixin font-source-sans($size: false, $colour: false, $weight: false, $lh: false) {
   font-family: "Poppins", sans-serif;
-  @if $size { font-size: $size; }
-  @if $colour { color: $colour; }
-  @if $weight { font-weight: $weight; }
-  @if $lh { line-height: $lh; }
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+}
+@mixin title-big {
+  font-size: 39px;
+  line-height: 50px;
+  color: $color-black;
+}
+@mixin title-medium {
+  font-size: 20px;
+  color: $color-black;
+}
+@mixin title-small {
+  color: $main-color;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+@mixin title {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 50px;
+}
+@mixin btn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  background: none;
+  border: 1px solid $color-white-op1;
+  border-radius: 3px;
+  color: $color-white;
+  text-align: center;
 }

@@ -3,9 +3,20 @@
   text-align: center;
   &__subtitle {
     margin-bottom: 10px;
+    &_fz {
+      &_small {
+        @include title-small;
+      }
+    }
   }
   &__title {
+    @include title;
     margin-bottom: 25px;
+    &_fz {
+      &_big {
+        @include title-big;
+      }
+    }
   }
   &__text {
     margin-bottom: 60px;
@@ -15,20 +26,19 @@
     width: 100%;
     height: 100%;
     border-radius: 3px;
-    border: 2px dashed #fff;
-    z-index: -1;
+    border: 2px dashed $color-white;
+    z-index: 1;
     background: linear-gradient($color-white, $color-white) padding-box,
       linear-gradient(to bottom, $color-blue-op5, $color-white) border-box;
+  }
+  &__item {
+    z-index: 2;
   }
   &__grid {
     position: relative;
     padding-top: 38px;
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: repeat(3, auto);
-=======
     grid-template-columns: repeat(3, minmax(auto, 226px));
->>>>>>> 2f868547b6c05d25eb2dd855b72dc1bf464167bd
     justify-content: center;
     column-gap: 166px;
     row-gap: 60px;
@@ -49,6 +59,11 @@
   }
   &__name {
     margin-bottom: 15px;
+    &_fz {
+      &_medium {
+        @include title-medium;
+      }
+    }
   }
   &__about {
     color: $color-black-op7;

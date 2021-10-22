@@ -3,7 +3,15 @@
   padding-bottom: 380px;
   text-align: center;
   &__title {
-    margin-bottom: 15px;
+    @include title;
+    color: $color-white;
+    &_fz {
+      &_big {
+        font-size: 39px;
+        line-height: 50px;
+        color: $color-black;
+      }
+    }
   }
   &__text {
     margin-bottom: 60px;
@@ -60,6 +68,11 @@
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 15px;
+    &_fz {
+      &_medium {
+        @include title-medium;
+      }
+    }
   }
   &__descr {
     color: $text-color-op7;
@@ -67,6 +80,11 @@
   }
   &__price {
     margin-bottom: 20px;
+    &_fz {
+      &_big {
+        @include title-big;
+      }
+    }
   }
   &__select {
     background: $color-grey;
@@ -110,8 +128,18 @@
     }
   }
   &__btn {
+    @include btn;
     @include push--auto;
     margin-top: 27px;
     border-radius: 4px;
+    &_blue {
+      background-color: $main-color;
+      color: $color-white;
+      font-size: 16px;
+      width: 198px;
+    }
+  }
+  &_semibold {
+    font-weight: 600;
   }
 }
