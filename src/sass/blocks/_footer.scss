@@ -1,5 +1,4 @@
 .footer {
-  height: 376px;
   background-color: $color-footer;
   padding: 126px 0;
   color: $color-white;
@@ -37,24 +36,24 @@
     width: 111px;
   }
   &__img {
+    @include dflex-center;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: none;
-    @include dflex-center;
   }
   &__dummy {
+    @include dflex-jcsb-aic;
     position: absolute;
     top: -40%;
     left: 50%;
     transform: translateX(-50%);
-    width: 1260px;
+    width: 80%;
     height: 206px;
     background: url("../img/dummy-bg.png") center center/cover no-repeat;
     border-radius: 5px;
     padding: 54px;
     color: $color-white;
-    @include dflex-jcsb-aic;
     &-title {
       font-size: 39px;
       margin-bottom: 25px;
@@ -74,7 +73,7 @@
       z-index: 1;
     }
     &-contact::after {
-      @include pseudo();
+      @include pseudo;
       right: 16px;
       top: 50%;
       transform: translateY(-50%);

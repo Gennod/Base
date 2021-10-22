@@ -24,18 +24,22 @@
     position: relative;
     padding-top: 38px;
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(3, auto);
+=======
+    grid-template-columns: repeat(3, minmax(auto, 226px));
+>>>>>>> 2f868547b6c05d25eb2dd855b72dc1bf464167bd
     justify-content: center;
     column-gap: 166px;
     row-gap: 60px;
   }
   &__icon {
+    @include push--auto;
     background: url("../icons/skills-icon-bg.svg") center center/cover no-repeat;
     width: 60px;
     height: 60px;
     position: relative;
     margin-bottom: 26px;
-    @include push--auto;
     img {
       position: absolute;
       top: 50%;

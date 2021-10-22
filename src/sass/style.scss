@@ -2,7 +2,9 @@
 @import "base/mixins";
 @import "base/button";
 @import "base/title";
+@import "base/fonts";
 
+<<<<<<< HEAD
 *,
 ::before,
 ::after {
@@ -43,6 +45,9 @@ h2 {
 .fw600 {
   font-weight: 600;
 }
+=======
+@import "base/global";
+>>>>>>> 2f868547b6c05d25eb2dd855b72dc1bf464167bd
 
 @import "blocks/header";
 @import "blocks/features";

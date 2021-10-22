@@ -1,0 +1,41 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    @include font-source-sans(16px, $text-color, 400);
+    background-color: $color-mainbg;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-white-op6;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2 {
+    margin: 0;
+}
+
+.container {
+    @include push--auto;
+    max-width: 1140px;
+}
+
+.text {
+    &-semibold {
+        font-weight: 600;
+    }
+}
