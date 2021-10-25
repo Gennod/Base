@@ -1,404 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Base</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="./css/normalize.css" />
-        <link rel="stylesheet" href="./css/style.min.css" />
-    </head>
 
-    <body>
-        <header class="header">
-            <div class="container">
-                <div class="header__menu">
-                    <img src="./icons/logo.svg" alt="logo" />
-                    <nav class="header__nav">
-                        <ul>
-                            <li class="header__link">
-                                <a class="active" href="#">Home</a>
-                            </li>
-                            <li class="header__link">
-                                <a href="#">Features</a>
-                            </li>
-                            <li class="header__link">
-                                <a href="#">Testimonial</a>
-                            </li>
-                            <li class="header__link">
-                                <a href="#">Pricing</a>
-                            </li>
-                            <li class="header__link"><a href="#">CTA</a></li>
-                        </ul>
-                    </nav>
-                    <a href="#" class="header__btn header__btn_active">Try demo</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__menu">
+                <a href="#" class="header__logo-link">
+                    <img width="110" height="42" src="./icons/logo.svg" alt="logo" />
+                </a>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header__link">
+                            <a class="active" href="#">Home</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">Features</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="header__link"><a href="#">CTA</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="header__btn header__btn--active">Try demo</a>
+            </div>
+            <div class="header__content">
+                <div class="header__subtitle header__subtitle--fz-small">
+                    lorem ipsum dolor
                 </div>
-                <div class="header__content">
-                    <div class="header__subtitle header__subtitle_fz_small">
-                        lorem ipsum dolor
+                <h1 class="header__title header__title--title">
+                    Always the
+                    <span class="header--blue header--underline">Real</span><br />Thing, Always
+                    <span class="header--blue">Saas</span>
+                </h1>
+                <div class="header__descr">
+                    And that number is growing every day. That<br />
+                    means
+                    <a href="#" class="header__descr-link"><span class="header--descr-underline">E-Commerce</span></a>
+                    is thriving.
+                </div>
+                <div class="header__btns">
+                    <a href="#" class="header__btn header__btn--first header__btn--active">Try For Free</a>
+                    <a href="#" class="header__btn">Try For Free</a>
+                </div>
+                <div class="header__bottom">
+                    There are some things money can’t buy. For everything<br />
+                    else there’s ‘’<span class="header--opacity">MasterCard</span>” is a good example.
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="features">
+            <div class="container">
+                <div class="features__icons">
+                    <img width="auto" height="47" src="./icons/fedx-icon.png" alt="fedx-icon" />
+                    <img width="auto" height="47" src="./icons/amazon-icon.png" alt="amazon-icon" />
+                    <img width="auto" height="47" src="./icons/fedx-big-icon.png" alt="fedx-big-icon" />
+                    <img width="auto" height="47" src="./icons/google-icon.png" alt="google-icon" />
+                    <img width="auto" height="47" src="./icons/microsoft-icon.png" alt="microsoft-icon" />
+                </div>
+                <div class="features__grid">
+                    <div class="features__item">
+                        <img width="600" height="480" src="./img/features-img-1.svg" alt="features-img-1" />
+                        <div class="features__item-descr">
+                            <div class="features__subtitle features__subtitle--fz-small">
+                                lorem ipsum dolor
+                            </div>
+                            <div class="features__title features__title--fz-big">
+                                <span class="features_semibold">Two</span> Saas
+                                Are Better<br /><span class="features--semibold">Than One.</span>
+                            </div>
+                            <div class="features__text">
+                                One of the most fundamental ways to go about
+                                that is to create a memorable
+                                <span class="features--semibold">E-Commerce</span>
+                                slogan.
+                            </div>
+                            <div class="features__list">
+                                <ul>
+                                    <li class="features__list-item">
+                                        <div class="features__icon">
+                                            <img width="13" height="16" src="./icons/features-icon-1.svg"
+                                                alt="features-icon-1" />
+                                        </div>
+                                        <div class="features__about">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed
+                                            do eiusmod tempor incididunt.
+                                        </div>
+                                    </li>
+                                    <li class="features__list-item">
+                                        <div class="features__icon">
+                                            <img width="13" height="16" src="./icons/features-icon-2.svg"
+                                                alt="features-icon-2" />
+                                        </div>
+                                        <div class="features__about">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed
+                                            do eiusmod tempor incididunt.
+                                        </div>
+                                    </li>
+                                    <li class="features__list-item">
+                                        <div class="features__icon">
+                                            <img width="13" height="16" src="./icons/features-icon-3.svg"
+                                                alt="features-icon-3" />
+                                        </div>
+                                        <div class="features__about">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed
+                                            do eiusmod tempor incididunt.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <h1 class="header__title header__title_title">
-                        Always the
-                        <span class="header_blue header_underline">Real</span
-                        ><br />Thing, Always
-                        <span class="header_blue">Saas</span>
-                    </h1>
-                    <div class="header__descr">
-                        And that number is growing every day. That<br />
-                        means
-                        <span class="header_descr-underline">E-Commerce</span>
-                        is thriving.
-                    </div>
-                    <div class="header__btns">
-                        <a
-                            href="#"
-                            class="header__btn header__btn_first header__btn_active"
-                            >Try For Free</a
-                        >
-                        <a href="#" class="header__btn">Try For Free</a>
-                    </div>
-                    <div class="header__bottom">
-                        There are some things money can’t buy. For everything<br />
-                        else there’s ‘’<span class="header_opacity"
-                            >MasterCard</span
-                        >” is a good example.
+                    <div class="features__item">
+                        <div class="features__item-descr">
+                            <div class="features__subtitle features__subtitle--fz-small">
+                                lorem ipsum dolor
+                            </div>
+                            <div class="features__title features__title--fz-big">
+                                <span class="features_semibold">With A Name Like Saas,</span><br /><span
+                                    class="features_semibold">It Has To </span>Be Good.
+                            </div>
+                            <div class="features__facts">
+                                <h2>
+                                    <span class="features--blue">Review the facts Saas is the
+                                        best?</span>
+                                </h2>
+                                <div class="features__block">
+                                    Lorem
+                                    <a class="features__link" href="#"><span class="features--underline">ipsum dolor sit
+                                            amet</span></a>
+                                    consectetur adipiscing elit sed do
+                                    eiusmod tempor.Lorem consectetur
+                                    adipiscing elit sed do eiusmod tempor.
+                                </div>
+                                <img width="16" height="9" class="features__arrowup" src="./icons/arrow-up-icon.svg"
+                                    alt="arrow-up-icon" />
+                            </div>
+                            <div class="features__reviews">
+                                <ul>
+                                    <li class="features__review">
+                                        <button class="features__list-button">
+                                            <div class="features__feedback">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur?
+                                            </div>
+                                            <img width="16" height="9" class="features__arrowdown"
+                                                src="./icons/arrow-down-icon.svg" alt="arrow-down-icon" />
+                                        </button>
+                                    </li>
+                                    <li class="features__review">
+                                        <button class="features__list-button">
+                                            <div class="features__feedback">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur?
+                                            </div>
+                                            <img width="16" height="9" class="features__arrowdown"
+                                                src="./icons/arrow-down-icon.svg" alt="arrow-down-icon" />
+                                        </button>
+                                    </li>
+                                    <li class="features__review">
+                                        <button class="features__list-button">
+                                            <div class="features__feedback">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur?
+                                            </div>
+                                            <img width="16" height="9" class="features__arrowdown"
+                                                src="./icons/arrow-down-icon.svg" alt="arrow-down-icon" />
+                                        </button>
+                                    </li>
+                                    <li class="features__review">
+                                        <button class="features__list-button">
+                                            <div class="features__feedback">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur?
+                                            </div>
+                                            <img width="16" height="9" class="features__arrowdown"
+                                                src="./icons/arrow-down-icon.svg" alt="arrow-down-icon" />
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="features__btns">
+                                <a href="#" class="
+                                            features__btn features__btn--first
+                                            features__btn--active features__btn--blue
+                                        ">Free Trial</a>
+                                <a href="#" class="features__btn features__btn--blue--none">Read More</a>
+                            </div>
+                        </div>
+                        <img width="750" height="533" class="features__item-img-2" src="./img/features-img-2.png"
+                            alt="features-img-2" />
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <div class="skills__subtitle skills__subtitle--fz-small">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <h2 class="skills__title skills__title--fz-big skills--semibold">
+                    The Loudest Noise Comes From<br />
+                    The Electric Saas.
+                </h2>
+                <div class="skills__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod.
+                </div>
+                <div class="skills__grid">
+                    <div class="skills__dashed"></div>
+                    <div class="skills__item">
+                        <div class="skills__icon">
+                            <img width="25" height="26" src="./icons/skills-icon-1.svg" alt="skills-icon-1" />
+                        </div>
+                        <div class="skills__name skills__name--fz-medium">
+                            Responsive Layout
+                        </div>
+                        <div class="skills__about">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__icon">
+                            <img width="25" height="26" src="./icons/skills-icon-2.svg" alt="skills-icon-2" />
+                        </div>
+                        <div class="skills__name skills__name--fz-medium">
+                            Smart BEM Grid
+                        </div>
+                        <div class="skills__about">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__icon">
+                            <img width="25" height="26" src="./icons/skills-icon-3.svg" alt="skills-icon-3" />
+                        </div>
+                        <div class="skills__name skills__name--fz-medium">
+                            User Friendly
+                        </div>
+                        <div class="skills__about">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__icon">
+                            <img width="25" height="26" src="./icons/skills-icon-4.svg" alt="skills-icon-4" />
+                        </div>
+                        <div class="skills__name skills__name--fz-medium">
+                            Built on Bootstrap v4
+                        </div>
+                        <div class="skills__about">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__icon">
+                            <img width="25" height="26" src="./icons/skills-icon-5.svg" alt="skills-icon-5" />
+                        </div>
+                        <div class="skills__name skills__name--fz-medium">
+                            Best online Security
+                        </div>
+                        <div class="skills__about">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__icon">
+                            <img width="25" height="26" src="./icons/skills-icon-6.svg" alt="skills-icon-6" />
+                        </div>
+                        <div class="skills__name skills__name--fz-medium">
+                            Creative Design
+                        </div>
+                        <div class="skills__about">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="order">
+            <div class="order__title order__title--fz-big order--semibold">
+                Keep Calm And Buy
+            </div>
+            <div class="order__text">
+                With lowering the price to even a slight extent one can
+                achieve exponential growth.
+            </div>
+            <div class="order__items">
+                <div class="order__item">
+                    <div class="order__name order__name--fz-medium">Student</div>
+                    <div class="order__descr">
+                        Lorem ipsum dolor sit amet,<br />
+                        consectetur adipiscing.
+                    </div>
+                    <div class="order__price order__price--fz-big">$15</div>
+                    <div class="order__select"><input class="switcher__checkbox sr-only" id="checkbox-first"
+                            type="checkbox" /><label class="switcher" for="checkbox-first">
+                            <div class="switcher__left">Monthiy</div>
+                            <div class="switcher__right">Anually</div>
+                        </label></div>
+                    <ul class="order__list">
+                        <li class="order__list-item">
+                            <div class="order__list-img">
+                                <img width="13" height="10" src="./icons/accept-icon.svg" alt="accept-icon" />
+                            </div>
+                            <div class="order__about">
+                                Consulting with experts<br />
+                                20 times for I yea
+                            </div>
+                        </li>
+                        <li class="order__list-item">
+                            <div class="order__list-img">
+                                <img width="13" height="10" src="./icons/accept-icon.svg" alt="accept-icon" />
+                            </div>
+                            <div class="order__about">
+                                Add friends for free for<br />
+                                1month
+                            </div>
+                        </li>
+                        <li class="order__list-item">
+                            <div class="order__list-img">
+                                <img width="13" height="10" src="./icons/accept-icon.svg" alt="accept-icon" />
+                            </div>
+                            <div class="order__about">Free 5 fonts</div>
+                        </li>
+                    </ul>
+                    <button class="order__btn order__btn--blue">Buy Now</button>
+                </div>
+                <div class="order__item selected">
+                    <div class="order__name order__name--fz-medium">Pro</div>
+                    <div class="order__descr">
+                        Lorem ipsum dolor sit amet,<br />
+                        consectetur adipiscing.
+                    </div>
+                    <div class="order__price order__price--fz-big">$30</div>
+                    <div class="order__select"><input class="switcher__checkbox sr-only" id="checkbox-second"
+                            type="checkbox" /><label class="switcher" for="checkbox-second">
+                            <div class="switcher__left">Mounthiy</div>
+                            <div class="switcher__right">Anually</div>
+                        </label></div>
 
-        <main class="content">
-            <section class="features">
-                <div class="container">
-                    <div class="features__icons">
-                        <img src="./icons/fedx-icon.png" alt="fedx-icon" />
-                        <img src="./icons/amazon-icon.png" alt="amazon-icon" />
-                        <img
-                            src="./icons/fedx-big-icon.png"
-                            alt="fedx-big-icon"
-                        />
-                        <img src="./icons/google-icon.png" alt="google-icon" />
-                        <img
-                            src="./icons/microsoft-icon.png"
-                            alt="microsoft-icon"
-                        />
-                    </div>
-                    <div class="features__grid">
-                        <div class="features__item">
-                            <img
-                                src="./img/features-img-1.svg"
-                                alt="features-img-1"
-                            />
-                            <div class="features__item-descr">
-                                <div class="features__subtitle features__subtitle_fz_small">
-                                    lorem ipsum dolor
-                                </div>
-                                <div class="features__title features__title_fz_big">
-                                    <span class="features_semibold">Two</span> Saas
-                                    Are Better<br /><span class="features_semibold"
-                                        >Than One.</span
-                                    >
-                                </div>
-                                <div class="features__text">
-                                    One of the most fundamental ways to go about
-                                    that is to create a memorable
-                                    <span class="features_semibold"
-                                        >E-Commerce</span
-                                    >
-                                    slogan.
-                                </div>
-                                <div class="features__list">
-                                    <ul>
-                                        <li class="features__list-item">
-                                            <div class="features__icon">
-                                                <img
-                                                    src="./icons/features-icon-1.svg"
-                                                    alt="features-icon-1"
-                                                />
-                                            </div>
-                                            <div class="features__about">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt.
-                                            </div>
-                                        </li>
-                                        <li class="features__list-item">
-                                            <div class="features__icon">
-                                                <img
-                                                    src="./icons/features-icon-2.svg"
-                                                    alt="features-icon-2"
-                                                />
-                                            </div>
-                                            <div class="features__about">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt.
-                                            </div>
-                                        </li>
-                                        <li class="features__list-item">
-                                            <div class="features__icon">
-                                                <img
-                                                    src="./icons/features-icon-3.svg"
-                                                    alt="features-icon-3"
-                                                />
-                                            </div>
-                                            <div class="features__about">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt.
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="features__item">
-                            <div class="features__item-descr">
-                                <div class="features__subtitle features__subtitle_fz_small">
-                                    lorem ipsum dolor
-                                </div>
-                                <div class="features__title features__title_fz_big">
-                                    <span class="features_semibold"
-                                        >With A Name Like Saas,</span
-                                    ><br /><span class="features_semibold"
-                                        >It Has To </span
-                                    >Be Good.
-                                </div>
-                                <div class="features__facts">
-                                    <h2>
-                                        <span class="features_blue"
-                                            >Review the facts Saas is the
-                                            best?</span
-                                        >
-                                    </h2>
-                                    <div class="features__block">
-                                        Lorem
-                                        <span class="features_underline"
-                                            >ipsum dolor sit amet</span
-                                        >
-                                        consectetur adipiscing elit sed do
-                                        eiusmod tempor.Lorem consectetur
-                                        adipiscing elit sed do eiusmod tempor.
-                                    </div>
-                                    <img
-                                        width="16"
-                                        height="9"
-                                        class="features__arrowup"
-                                        src="./icons/arrow-up-icon.svg"
-                                        alt="arrow-up-icon"
-                                    />
-                                </div>
-                                <div class="features__reviews">
-                                    <ul>
-                                        <li class="features__review">
-                                            <div class="features__feedback">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur?
-                                            </div>
-                                            <img
-                                                class="features__arrowdown"
-                                                src="./icons/arrow-down-icon.svg"
-                                                alt="arrow-down-icon"
-                                            />
-                                        </li>
-                                        <li class="features__review">
-                                            <div class="features__feedback">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur?
-                                            </div>
-                                            <img
-                                                class="features__arrowdown"
-                                                src="./icons/arrow-down-icon.svg"
-                                                alt="arrow-down-icon"
-                                            />
-                                        </li>
-                                        <li class="features__review">
-                                            <div class="features__feedback">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur?
-                                            </div>
-                                            <img
-                                                class="features__arrowdown"
-                                                src="./icons/arrow-down-icon.svg"
-                                                alt="arrow-down-icon"
-                                            />
-                                        </li>
-                                        <li class="features__review">
-                                            <div class="features__feedback">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur?
-                                            </div>
-                                            <img
-                                                class="features__arrowdown"
-                                                src="./icons/arrow-down-icon.svg"
-                                                alt="arrow-down-icon"
-                                            />
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="features__btns">
-                                    <a
-                                        href="#"
-                                        class="
-                                            features__btn features__btn_first
-                                            features__btn_active features__btn_blue
-                                        "
-                                        >Free Trial</a
-                                    >
-                                    <a
-                                        href="#"
-                                        class="features__btn features__btn_blue_none"
-                                        >Read More</a
-                                    >
-                                </div>
-                            </div>
-                                <img
-                                    width="750"
-                                    height="533"
-                                    class="features__item-img-2"
-                                    src="./img/features-img-2.png"
-                                    alt="features-img-2"
-                                />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="skills">
-                <div class="container">
-                    <div class="skills__subtitle skills__subtitle_fz_small">
-                        Lorem ipsum dolor sit amet
-                    </div>
-                    <h2 class="skills__title skills__title_fz_big skills_semibold">
-                        The Loudest Noise Comes From<br />
-                        The Electric Saas.
-                    </h2>
-                    <div class="skills__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod.
-                    </div>
-                    <div class="skills__grid">
-                        <div class="skills__dashed"></div>
-                        <div class="skills__item">
-                            <div class="skills__icon">
-                                <img
-                                    src="./icons/skills-icon-1.svg"
-                                    alt="skills-icon-1"
-                                />
-                            </div>
-                            <div class="skills__name skills__name_fz_medium">
-                                Responsive Layout
-                            </div>
-                            <div class="skills__about">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                            </div>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__icon">
-                                <img
-                                    src="./icons/skills-icon-2.svg"
-                                    alt="skills-icon-2"
-                                />
-                            </div>
-                            <div class="skills__name skills__name_fz_medium">
-                                Smart BEM Grid
-                            </div>
-                            <div class="skills__about">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                            </div>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__icon">
-                                <img
-                                    src="./icons/skills-icon-3.svg"
-                                    alt="skills-icon-3"
-                                />
-                            </div>
-                            <div class="skills__name skills__name_fz_medium">
-                                User Friendly
-                            </div>
-                            <div class="skills__about">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                            </div>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__icon">
-                                <img
-                                    src="./icons/skills-icon-4.svg"
-                                    alt="skills-icon-4"
-                                />
-                            </div>
-                            <div class="skills__name skills__name_fz_medium">
-                                Built on Bootstrap v4
-                            </div>
-                            <div class="skills__about">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                            </div>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__icon">
-                                <img
-                                    src="./icons/skills-icon-5.svg"
-                                    alt="skills-icon-5"
-                                />
-                            </div>
-                            <div class="skills__name skills__name_fz_medium">
-                                Best online Security
-                            </div>
-                            <div class="skills__about">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                            </div>
-                        </div>
-                        <div class="skills__item">
-                            <div class="skills__icon">
-                                <img
-                                    src="./icons/skills-icon-6.svg"
-                                    alt="skills-icon-6"
-                                />
-                            </div>
-                            <div class="skills__name skills__name_fz_medium">
-                                Creative Design
-                            </div>
-                            <div class="skills__about">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="order">
-                <div class="order__title order__title_fz_big order_semibold">
-                    Keep Calm And Buy
-                </div>
-                <div class="order__text">
-                    With lowering the price to even a slight extent one can
-                    achieve exponential growth.
-                </div>
-                <div class="order__items">
-                    <div class="order__item">
-                        <div class="order__name order__name_fz_medium">Student</div>
-                        <div class="order__descr">
-                            Lorem ipsum dolor sit amet,<br />
-                            consectetur adipiscing.
-                        </div>
-                        <div class="order__price order__price_fz_big">$15</div>
-                        <div class="order__select">
-                            Anually
-                            <div class="order__select-inner">Monthiy</div>
-                        </div>
-                        <ul class="order__list">
+                    <div class="order__list">
+                        <ul>
                             <li class="order__list-item">
                                 <div class="order__list-img">
-                                    <img
-                                        src="./icons/accept-icon.svg"
-                                        alt="accept-icon"
-                                    />
+                                    <img width="13" height="10" src="./icons/accept-icon.svg" alt="accept-icon" />
                                 </div>
                                 <div class="order__about">
                                     Consulting with experts<br />
@@ -407,10 +378,7 @@
                             </li>
                             <li class="order__list-item">
                                 <div class="order__list-img">
-                                    <img
-                                        src="./icons/accept-icon.svg"
-                                        alt="accept-icon"
-                                    />
+                                    <img width="13" height="10" src="./icons/accept-icon.svg" alt="accept-icon" />
                                 </div>
                                 <div class="order__about">
                                     Add friends for free for<br />
@@ -419,208 +387,135 @@
                             </li>
                             <li class="order__list-item">
                                 <div class="order__list-img">
-                                    <img
-                                        src="./icons/accept-icon.svg"
-                                        alt="accept-icon"
-                                    />
+                                    <img width="13" height="10" src="./icons/accept-icon.svg" alt="accept-icon" />
                                 </div>
                                 <div class="order__about">Free 5 fonts</div>
                             </li>
                         </ul>
-                        <a class="order__btn order__btn_blue">Buy Now</a>
                     </div>
-                    <div class="order__item selected">
-                        <div class="order__name order__name_fz-medium">Pro</div>
-                        <div class="order__descr">
-                            Lorem ipsum dolor sit amet,<br />
-                            consectetur adipiscing.
-                        </div>
-                        <div class="order__price order__price_fz_big">$30</div>
-                        <div class="order__select">
-                            Anually
-                            <div class="order__select-inner">Monthiy</div>
-                        </div>
-                        <div class="order__list">
-                            <ul>
-                                <li class="order__list-item">
-                                    <div class="order__list-img">
-                                        <img
-                                            src="./icons/accept-icon.svg"
-                                            alt="accept-icon"
-                                        />
-                                    </div>
-                                    <div class="order__about">
-                                        Consulting with experts<br />
-                                        20 times for I yea
-                                    </div>
-                                </li>
-                                <li class="order__list-item">
-                                    <div class="order__list-img">
-                                        <img
-                                            src="./icons/accept-icon.svg"
-                                            alt="accept-icon"
-                                        />
-                                    </div>
-                                    <div class="order__about">
-                                        Add friends for free for<br />
-                                        1month
-                                    </div>
-                                </li>
-                                <li class="order__list-item">
-                                    <div class="order__list-img">
-                                        <img
-                                            src="./icons/accept-icon.svg"
-                                            alt="accept-icon"
-                                        />
-                                    </div>
-                                    <div class="order__about">Free 5 fonts</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="order__btn order__btn_blue">Buy Now</a>
-                    </div>
-                    <div class="order__item">
-                        <div class="order__name order__name_fz_medium">Company</div>
-                        <div class="order__descr">
-                            Lorem ipsum dolor sit amet,<br />
-                            consectetur adipiscing.
-                        </div>
-                        <div class="order__price order__price_fz_big">$70</div>
-                        <div class="order__select">
-                            Anually
-                            <div class="order__select-inner">Monthiy</div>
-                        </div>
-                        <div class="order__list">
-                            <ul>
-                                <li class="order__list-item">
-                                    <div class="order__list-img">
-                                        <img
-                                            src="./icons/accept-icon.svg"
-                                            alt="accept-icon"
-                                        />
-                                    </div>
-                                    <div class="order__about">
-                                        Consulting with experts<br />
-                                        20 times for I yea
-                                    </div>
-                                </li>
-                                <li class="order__list-item">
-                                    <div class="order__list-img">
-                                        <img
-                                            src="./icons/accept-icon.svg"
-                                            alt="accept-icon"
-                                        />
-                                    </div>
-                                    <div class="order__about">
-                                        Add friends for free for<br />
-                                        1month
-                                    </div>
-                                </li>
-                                <li class="order__list-item">
-                                    <div class="order__list-img">
-                                        <img
-                                            src="./icons/accept-icon.svg"
-                                            alt="accept-icon"
-                                        />
-                                    </div>
-                                    <div class="order__about">Free 5 fonts</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="order__btn order__btn_blue">Buy Now</a>
-                    </div>
+                    <button class="order__btn order__btn--blue">Buy Now</button>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__dummy">
-                    <div class="footer__dummy-about">
-                        <div class="footer__dummy-title">
-                            Lorem Ipsum is simply dummy
-                        </div>
-                        <div class="footer__dummy-text">
-                            Contrary to popular belief, Lorem Ipsum is not
-                            simply<br />random text. It has roots
-                        </div>
+                <div class="order__item">
+                    <div class="order__name order__name--fz-medium">Company</div>
+                    <div class="order__descr">
+                        Lorem ipsum dolor sit amet,<br />
+                        consectetur adipiscing.
                     </div>
-                    <div class="footer__dummy-contact">
-                        <img
-                            class="footer__dummy-img"
-                            src="./icons/arrow-right-icon.svg"
-                            alt="arrow-right-icon"
-                        />
-                        <input
-                            class="footer__dummy-input"
-                            type="text"
-                            name="dummy-input"
-                            placeholder="Enter Email Adress"
-                        />
-                    </div>
-                </div>
-                <div class="footer__wrapper">
-                    <div class="footer__left">
-                        <img src="./icons/logo.svg" alt="logo" />
-                        <div class="footer__text">
-                            Lorem Ipsum Dolor Sit Amet,<br />Consectetur
-                            Adipiscing.
-                        </div>
-                    </div>
-                    <div class="footer__right">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <div class="footer__title">Customers</div>
-                                <a href="#" class="footer__link">Buyer</a>
-                                <a href="#" class="footer__link">Supplier</a>
-                            </li>
-                            <li class="footer__item">
-                                <div class="footer__title">Company</div>
-                                <a href="#" class="footer__link">About Us</a>
-                                <a href="#" class="footer__link">Careers</a>
-                                <a href="#" class="footer__link">Contact Us</a>
-                            </li>
-                            <li class="footer__item">
-                                <div class="footer__title">Company</div>
-                                <a href="#" class="footer__link"
-                                    >Terms&Conditions</a
-                                >
-                                <a href="#" class="footer__link"
-                                    >Privacy Policy</a
-                                >
-                            </li>
-                            <li class="footer__item">
-                                <div class="footer__title">Follow us</div>
-                                <input
-                                    class="footer__input"
-                                    placeholder="Email Adress"
-                                    type="text"
-                                    name="email"
-                                />
-                                <div class="footer__socials">
-                                    <div class="footer__img">
-                                        <img
-                                            src="./icons/footer-facebook-icon.svg"
-                                            alt="facebook-icon"
-                                        />
-                                    </div>
-                                    <div class="footer__img">
-                                        <img
-                                            src="./icons/footer-twitter-icon.svg"
-                                            alt="twitter-icon"
-                                        />
-                                    </div>
-                                    <div class="footer__img">
-                                        <img
-                                            src="./icons/footer-inst-icon.svg"
-                                            alt="inst-icon"
-                                        />
-                                    </div>
+                    <div class="order__price order__price--fz-big">$70</div>
+                    <div class="order__select"><input class="switcher__checkbox sr-only" id="checkbox-third"
+                            type="checkbox" /><label class="switcher" for="checkbox-third">
+                            <div class="switcher__left">Mounthiy</div>
+                            <div class="switcher__right">Anually</div>
+                        </label></div>
+                    <div class="order__list">
+                        <ul>
+                            <li class="order__list-item">
+                                <div class="order__list-img">
+                                    <img width="13" height="10" src="./icons/accept-icon.svg" alt="accept-icon" />
                                 </div>
+                                <div class="order__about">
+                                    Consulting with experts<br />
+                                    20 times for I yea
+                                </div>
+                            </li>
+                            <li class="order__list-item">
+                                <div class="order__list-img">
+                                    <img width="13" height="10" src="./icons/accept-icon.svg" alt="accept-icon" />
+                                </div>
+                                <div class="order__about">
+                                    Add friends for free for<br />
+                                    1month
+                                </div>
+                            </li>
+                            <li class="order__list-item">
+                                <div class="order__list-img">
+                                    <img width="13" height="10" src="./icons/accept-icon.svg" alt="accept-icon" />
+                                </div>
+                                <div class="order__about">Free 5 fonts</div>
                             </li>
                         </ul>
                     </div>
+                    <button class="order__btn order__btn--blue">Buy Now</button>
                 </div>
             </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__dummy">
+                <div class="footer__dummy-about">
+                    <div class="footer__dummy-title">
+                        Lorem Ipsum is simply dummy
+                    </div>
+                    <div class="footer__dummy-text">
+                        Contrary to popular belief, Lorem Ipsum is not
+                        simply<br />random text. It has roots
+                    </div>
+                </div>
+                <div class="footer__dummy-contact">
+                    <img width="24" height="17" class="footer__dummy-img" src="./icons/arrow-right-icon.svg"
+                        alt="arrow-right-icon" />
+                    <input class="footer__dummy-input" type="text" name="dummy-input"
+                        placeholder="Enter Email Adress" />
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <a href="#" class="footer__logo-link">
+                        <img width="110" height="42" src="./icons/logo.svg" alt="logo" />
+                    </a>
+                    <div class="footer__text">
+                        Lorem Ipsum Dolor Sit Amet,<br />Consectetur
+                        Adipiscing.
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <div class="footer__title">Customers</div>
+                            <a href="#" class="footer__link">Buyer</a>
+                            <a href="#" class="footer__link">Supplier</a>
+                        </li>
+                        <li class="footer__item">
+                            <div class="footer__title">Company</div>
+                            <a href="#" class="footer__link">About Us</a>
+                            <a href="#" class="footer__link">Careers</a>
+                            <a href="#" class="footer__link">Contact Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <div class="footer__title">Company</div>
+                            <a href="#" class="footer__link">Terms&Conditions</a>
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <div class="footer__title">Follow us</div>
+                            <input class="footer__input" placeholder="Email Adress" type="text" name="email" />
+                            <div class="footer__socials">
+                                <div class="footer__img">
+                                    <a class="footer__social-link">
+                                        <img width="7" height="14" src="./icons/footer-facebook-icon.svg"
+                                            alt="facebook-icon" />
+                                    </a>
+                                </div>
+                                <div class="footer__img">
+                                    <a href="#" class="footer__social-link">
+                                        <img width="14" height="12" src="./icons/footer-twitter-icon.svg"
+                                            alt="twitter-icon" />
+                                    </a>
+                                </div>
+                                <div class="footer__img">
+                                    <a href="#" class="footer__social-link">
+                                        <img width="14" height="13" src="./icons/footer-inst-icon.svg"
+                                            alt="inst-icon" />
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

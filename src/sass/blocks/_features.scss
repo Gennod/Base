@@ -46,8 +46,8 @@
     }
     &__subtitle {
         margin: 70px 0 10px 0;
-        &_fz {
-            &_small {
+        &--fz {
+            &-small {
                 font-size: 16px;
                 color: $main-color;
                 text-transform: uppercase;
@@ -59,8 +59,8 @@
     &__title {
         @include title;
         color: $color-black;
-        &_fz {
-            &_big {
+        &--fz {
+            &-big {
                 @include title-big;
             }
         }
@@ -132,26 +132,30 @@
         margin-top: 45px;
         display: flex;
     }
+    &__list-button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: $text-color;
+        padding: 0;
+    }
     &__btn {
         @include btn;
         display: inline-block;
-        &_first {
-            margin-right: 25px;
-        }
-        &_active {
+        &--active {
             color: $main-color;
             background: $color-white;
             border: none;
         }
-        &_first {
+        &--first {
             margin-right: 30px;
         }
-        &_blue {
+        &--blue {
             background-color: $main-color;
             color: $color-white;
             font-size: 16px;
             width: 198px;
-            &_none {
+            &--none {
                 border: 1px solid $main-color-op1;
                 color: $main-color;
                 font-size: 16px;
@@ -159,15 +163,19 @@
             }
         }
     }
-    &_blue {
+    &__link {
+        display: inline-block;
+        color: $text-color;
+    }
+    &--blue {
         color: $main-color;
         font-weight: 500;
         font-size: 20px;
     }
-    &_underline {
+    &--underline {
         text-decoration: underline;
     }
-    &_semibold {
+    &--semibold {
         font-weight: 600;
     }
 }

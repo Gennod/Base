@@ -3,8 +3,8 @@
   text-align: center;
   &__subtitle {
     margin-bottom: 10px;
-    &_fz {
-      &_small {
+    &--fz {
+      &-small {
         @include title-small;
       }
     }
@@ -12,8 +12,8 @@
   &__title {
     @include title;
     margin-bottom: 25px;
-    &_fz {
-      &_big {
+    &--fz {
+      &-big {
         @include title-big;
       }
     }
@@ -28,7 +28,7 @@
     border-radius: 3px;
     border: 2px dashed $color-white;
     z-index: 1;
-    background: linear-gradient($color-white, $color-white) padding-box,
+    background: linear-gradient($color-mainbg, $color-mainbg) padding-box,
       linear-gradient(to bottom, $color-blue-op5, $color-white) border-box;
   }
   &__item {
@@ -59,8 +59,8 @@
   }
   &__name {
     margin-bottom: 15px;
-    &_fz {
-      &_medium {
+    &--fz {
+      &-medium {
         @include title-medium;
       }
     }

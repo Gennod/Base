@@ -69,3 +69,10 @@
   color: $color-white;
   text-align: center;
 }
+@mixin input-hover {
+  outline: none;
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid $color-white;
+  }
+}

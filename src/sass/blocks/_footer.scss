@@ -23,6 +23,7 @@
     margin-bottom: 19px;
   }
   &__input {
+    @include input-hover;
     padding: 9px 15px;
     text-align: left;
     border: 1px solid $color-white-op5;
@@ -41,6 +42,7 @@
     height: 30px;
     border-radius: 50%;
     background: none;
+    cursor: pointer;
   }
   &__dummy {
     @include dflex-jcsb-aic;
@@ -83,6 +85,7 @@
       border-radius: 50px;
     }
     &-input {
+      @include input-hover;
       color: $color-white;
       width: 460px;
       padding: 24px 40px;
@@ -90,6 +93,5 @@
       background: none;
       border: 1px solid $color-white-op7;
     }
-
   }
 }

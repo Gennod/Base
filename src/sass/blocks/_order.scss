@@ -5,8 +5,8 @@
   &__title {
     @include title;
     color: $color-white;
-    &_fz {
-      &_big {
+    &--fz {
+      &-big {
         font-size: 39px;
         line-height: 50px;
         color: $color-black;
@@ -44,15 +44,14 @@
     .order__price {
       color: $color-white;
     }
-    .order__select {
-      background: $color-white-op1;
-      border: 1px solid $color-white-op3;
+    .switcher {
       color: $color-white;
-      &-inner {
-        background: $main-color;
-        border: 1px solid $color-white-op5;
-      }
     }
+    &__checkbox:checked {
+      color: $color-black;
+      background: none;
+    }
+
     .order__list {
       &-img {
         background-color: $color-white;
@@ -68,8 +67,8 @@
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 15px;
-    &_fz {
-      &_medium {
+    &--fz {
+      &-medium {
         @include title-medium;
       }
     }
@@ -80,35 +79,18 @@
   }
   &__price {
     margin-bottom: 20px;
-    &_fz {
-      &_big {
+    &--fz {
+      &-big {
         @include title-big;
       }
     }
   }
   &__select {
-    background: $color-grey;
-    border: 0.5px solid $text-color-op05;
-    border-radius: 18px;
     position: relative;
     text-align: right;
-    padding: 8px 30px;
     margin-bottom: 27px;
     font-weight: 400;
     font-size: 13px;
-    &-inner {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 50%;
-      height: 100%;
-      background: $color-white;
-      box-shadow: 4px 2px 38px $color-black-op02;
-      border-radius: 18px;
-      text-align: center;
-      padding: 7px 29px;
-      cursor: pointer;
-    }
   }
   &__list {
     &-item {
@@ -132,14 +114,86 @@
     @include push--auto;
     margin-top: 27px;
     border-radius: 4px;
-    &_blue {
+    cursor: pointer;
+    &--blue {
       background-color: $main-color;
       color: $color-white;
       font-size: 16px;
       width: 198px;
     }
   }
-  &_semibold {
+  &--semibold {
     font-weight: 600;
   }
+}
+
+$c-white: $main-color;
+$c-black: #000;
+$c-theme: #00a8ff;
+
+.switcher {
+  position: relative;
+  display: flex;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  will-change: transform;
+  width: 222px;
+  height: 36px;
+  font-size: 13px;
+  background: $color-white-op1;
+  border: 1px solid $color-white-op3;
+  color: $text-color;
+  &__left {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__right {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  // indicator
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    border-radius: inherit;
+    background-color: $main-color;
+    transform: translateX(-75%);
+    transition: transform 0.5s ease-in-out;
+
+    .switcher__checkbox:checked + & {
+      transform: translateX(25%);
+    }
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.box {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  perspective: 750px;
+  position: relative;
 }
