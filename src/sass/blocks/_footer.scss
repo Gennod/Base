@@ -69,12 +69,12 @@
     }
     &-img {
       position: absolute;
-      right: 42px;
       top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
       z-index: 1;
     }
-    &-contact::after {
+    &-btn {
       @include pseudo;
       right: 16px;
       top: 50%;
@@ -83,6 +83,12 @@
       height: 42px;
       background: $color-white;
       border-radius: 50px;
+      cursor: pointer;
+      border: none;
+      transition: all .3s;
+      &:hover {
+        background: $main-color;
+      }
     }
     &-input {
       @include input-hover;
