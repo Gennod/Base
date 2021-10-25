@@ -46,12 +46,15 @@
     }
     .switcher {
       color: $color-white;
+      background: $color-white-op1;
+      border: 1px solid $color-white-op3;
+     &::before {
+       background-color: $main-color;
+     }
+     &__right {
+       color: $color-white;
+     }
     }
-    &__checkbox:checked {
-      color: $color-black;
-      background: none;
-    }
-
     .order__list {
       &-img {
         background-color: $color-white;
@@ -127,10 +130,6 @@
   }
 }
 
-$c-white: $main-color;
-$c-black: #000;
-$c-theme: #00a8ff;
-
 .switcher {
   position: relative;
   display: flex;
@@ -142,9 +141,9 @@ $c-theme: #00a8ff;
   width: 222px;
   height: 36px;
   font-size: 13px;
-  background: $color-white-op1;
-  border: 1px solid $color-white-op3;
-  color: $text-color;
+  background: $color-grey;
+  border: 0.5px solid $text-color-op05;
+  color: $color-black;
   &__left {
     position: absolute;
     left: 30px;
@@ -156,6 +155,7 @@ $c-theme: #00a8ff;
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
+    color: $text-color;
   }
   // indicator
   &::before {
@@ -166,10 +166,9 @@ $c-theme: #00a8ff;
     bottom: 0;
     width: 200%;
     border-radius: inherit;
-    background-color: $main-color;
+    background-color: $color-white;
     transform: translateX(-75%);
     transition: transform 0.5s ease-in-out;
-
     .switcher__checkbox:checked + & {
       transform: translateX(25%);
     }
